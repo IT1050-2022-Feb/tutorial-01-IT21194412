@@ -6,19 +6,21 @@
 
 int main() {
    int sub1, sub2;
-   float total, average;
+   int total; 
+   float average;
    
    printf("Enter the marks of subject 1:\n");
-   scanf("%d, &sub1");
+   scanf("%d", &sub1);
    
    printf("Enter the marks of subject 2:\n");
-   scanf("%d, &sub2");
+   scanf("%d", &sub2);
    
    total = sub1 + sub2; 
-   average = total / 2;
+   average = total / 2.00;
     
-   printf("The Total marks is:.2f\n", total);
-   printf("\nThe Average marks is:2f\n", average);
+   printf("The Total marks is:%d\n", total);
+   printf("\nThe Average marks is:%.2f\n", average);
+ 
    
   return 0;
 }
